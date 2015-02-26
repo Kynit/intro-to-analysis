@@ -1,0 +1,146 @@
+\documentclass{article}
+%\setlength\parindent{0pt}
+\begin{document}
+
+Unfinished problems: 10, 15, 16, 17 + 18 (equivalent)
+
+\textbf{Problem 8}
+
+Consider any point $p$. According to Axiom 4, there exists a largest integer $M_x$ and a smallest integer $M_y$ such that $M_x < p < M_y$. Then, choose $x$ and $y$ such that $M_x < x < p$ and $p < y < M_y$ and consider the segment $(x, y)$ (Axiom 3).
+
+Then, we will try to find an integer different from $p$ inside $(x, y)$. Consider any integer $n$. There are three cases:
+
+\begin{enumerate}
+\item $n = p$
+
+Here, $n$ is not different from $p$, so we have not found an integer different from $p$. (Note that this case is not possible if $p$ is not an integer.)
+
+\item $n < p$
+
+Note that $n$ must satisfy $n \leq M_x$; if $n > M_x$, we have contradicted Axiom 4. Then, from $n \leq M_x$ and $M_x < x$, $n < x$; and from $x < y$, $n < y$ (Axiom 2). Thus, $n$ is not between $x$ and $y$, so $(x, y)$ does not contain $n$.
+
+\item $n > p$
+
+This case is symmetric to the $n < p$ case.
+\end{enumerate}
+
+Therefore, we can construct a segment containing $p$ that does not contain any integers (positive or otherwise) different from $p$. Since every element of $M$ is an integer, we have proven that there is a segment containing any point without an element of $M$, so $M$ has no limit points.
+\vspace{10pt}
+
+
+\textbf{Problem 9}
+
+\textit{Show that if $p$ is a limit point of the point set $M$ and $S$ is a segment containing $p$, then $S$ contains 2 points of $M$.}
+
+Arbitrarily define $S$ as the segment $(a, b)$. From the definition of a limit point, $S$ contains a point $q_1$ of $M$ different from $p$. Construct a new segment $S_2$ as follows:
+
+\begin{enumerate}
+\item
+If $q_1 < p$, $S_2 = (q_1, b)$
+
+\item
+If $q_1 > p$, $S_2 = (a, q_1)$
+\end{enumerate}
+
+Note that $S_2$ contains $p$, and that every point of $S_2$ is between $a$ and $b$. Since $S_2$ contains $p$, it must contain a point $q_2$ from $M$. $q_2$ cannot be equal to $q_1$ (because $q_1$ is not in $S_2$), and $q_2$ is an element of $S$. Therefore, we have found two points $q_1$ and $q_2$ in $S$ that are in $M$.
+
+\textit{Fun note: if we continue this procedure (shortening the segment), then we can find as many points from $M$ as we like in $S$!}
+\vspace{10pt}
+
+
+\textbf{Problem 11}
+
+This proof assumes the following facts:
+
+\begin{quote}
+If $\frac{1}{a}$ denotes the \textit{reciprocal} of a, and $0 < a < b$, then $0 < \frac{1}{b} < \frac{1}{a}$.
+\end{quote}
+
+\begin{quote}
+\textit{Positive} means $ > 0$.
+\end{quote}
+
+Choose two points $x, y$ such that $x < 0 < y$. Every point of $M$ is positive, so Axiom 2 implies that every point is greater than $x$. 
+
+To show that the segment $(x, y)$ contains a point $i$ from $M$, we must find a point such that $i < y$. However, every point of $M$ is a reciprocal of a positive integer $n$ (ie: $i = \frac{1}{n}$). Therefore, we are trying to find a point such that $\frac{1}{n} < y$. From the fact given at the start of this proof, this means that $\frac{1}{y} < n$. According to Axiom 4, there is an integer greater than $\frac{1}{y}$, so we can find a point from $M$ inside $(x, y)$. Therefore, every segment containing $0$ also contains a different point from $M$, so $0$ is a limit point of $M$.
+\vspace{10pt}
+
+\textbf{Problem 12}
+
+This proof assumes the following fact:
+
+\begin{quote}
+If $\frac{1}{a}$ denotes the \textit{reciprocal} of a, and $0 < a < b$, then $0 < \frac{1}{b} < \frac{1}{a}$.
+\end{quote}
+
+There are two cases to consider (Axiom 1):
+
+\begin{enumerate}
+\item
+$p < 0$
+
+Every element of $M$ is the reciprocal of a positive integer. Since the reciprocal of a positive number is positive, every element in $M$ is positive. We can construct $S = (x, y)$ such that $x < p$ and $p < y < 0$ (Axiom 3). Then, since $y < 0$ and $0 < q$ for every $q$ in $M$, no point of $M$ is less than y, so $S$ contains no points of $M$, and $p$ is not a limit point of $M$.
+
+\item
+$p > 0$
+
+Consider the point $\frac{1}{p}$, which is also positive. Showing that $p$ is a limit point of $M$ is equivalent to showing that $\frac{1}{p}$ is a limit point of the set of positive integers. However, according to Problem 8, the set of positive integers has no limit points. Therefore, $p$ is not a limit point of $M$.
+\end{enumerate}
+\vspace{10pt}
+
+\textbf{Problem 13}
+
+\textit{Show that if $H$ and $K$ are two point sets with a common point and $p$ is a limit point of $H \cap K$, then $p$ is a limit point of $H$ and $p$ is a limit point of $K$.}
+
+If $p$ is a limit point of $H \cap K$, then every segment $S$ containing $p$ contains a point $q$ that is in $H \cap K$.
+
+From the definition of an intersection, every point in $H \cap K$ is in $H$ and $K$. Therefore, $q$ is in $H$ and $q$ is in $K$.
+
+Finally, since every $S$ contains a $q$ that's in $H$, $p$ must be a limit point of $H$ (and similar for $K$).
+\vspace{10pt}
+
+
+\textbf{Problem 14}
+
+\textbf{It is not required that every interval containing $p$ contains a point of $M$.}
+
+We will construct a counterexample. Consider the point set $M = (0, 1)$, which has the limit point $p = 1$. Then consider the interval $I = [1, 2]$. From the definition of an interval, $I$ contains $1$, so $I$ contains $p$. Then, we will show that no points of $M$ are in $I$. 
+
+Consider an arbitrary point $x$ in $M$. Since $x$ is between $0$ and $1$, $x < 1$. In order to be in $I$, we would need $x = 1$ (bottom point) or $x > 1$ (segment and top point). However, either of these would contradict Axiom 1, so $x$ cannot be in $I$. Thus, no points of $M$ are in $I$, so we have found a counterexample.
+\vspace{10pt}
+
+\textbf{Problem 17}
+
+Direct proof:
+
+Since $p$ is not a limit point of $H$, then we can find a segment that contains $p$ with no other points of $H$. 
+
+
+Proof by contradiction:
+
+(If $p$ is a limit point of $H \cup K$, then we have a contradiction.)
+
+Suppose that $p$ is a limit point of $H \cup K$. Then, every segment containing $p$ contains a point $q$ of $H \cup K$. According to the definition of a union, either $q$ is in $H$ or $q$ is in $K$. However, if $q$ is in $H$, then $S$ contains a point of $H$, so $p$ is a limit point of $H$. Likewise, if $q$ is in $K$, then $S$ contains a point of $K$, so $p$ is a limit point of $K$. Therefore, we have a contradiction, so $p$ must not be a limit point of $H \cup K$.
+
+(this looks faulty.)
+
+Contrapositive:
+
+(Show that if $p$ is a limit point of $H \cup K$, then $p$ is a limit point of $H$ or $p$ is a limit point of $K$.)
+
+Every segment containing $p$ also contains a point $q$ of $H \cup K$. From the definition of a union, $q$ is either a point of $H$ or a point of $K$. 
+\vspace{10pt}
+
+
+\textbf{Problem 18}
+
+\textit{Show that if $H$ and $K$ are two point sets and $p$ is a limit point of $H \cup K$, then $p$ is a limit point of $H$ or $p$ is a limit point of $K$.}
+
+Let's prove the contrapositive:
+
+\textit{Show that if $p$ is not a limit point of $H$ and $p$ is not a limit point of $K$, then $p$ is not a limit point of $H \cup K$.}
+
+...and this is true, as proven in the previous problem.
+\vspace{10pt}
+
+\end{document}

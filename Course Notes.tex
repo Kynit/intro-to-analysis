@@ -1,0 +1,88 @@
+\documentclass{article}
+%\setlength\parindent{0pt}
+\newtheorem{axiom}{Axiom}
+\newtheorem{definition}{Definition}
+\newtheorem{notation}{Notation}
+
+\begin{document}
+\section*{Main Course Notes}
+There are 5 axioms that we will use in this class:
+
+\begin{axiom}
+If each of $a$ and $b$ is a number, then exactly one of the following is true:
+\begin{enumerate}
+\item
+$a = b$
+\item
+$a < b$
+\item
+$a > b$
+\end{enumerate}
+\end{axiom}
+
+\begin{axiom}
+If each of $a, b, c$ is a number, $a < b$, and $b < c$, then $a < c$.
+\end{axiom}
+
+\begin{axiom}
+If $a$ and $b$ are two points on the number line, then there is a point between them.
+\end{axiom}
+
+\begin{axiom}
+If $a$ is a point, then there is a smallest integer $b$ such that $b > a$ and a largest integer $c$ such that $c < a$.
+\end{axiom}
+
+\begin{axiom}
+If $n$ is an integer, then $n + 1$ and $n - 1$ are integers, and $n$ is the only integer between $n - 1$ and $n + 1$.
+\end{axiom}
+
+Then, as the course continues, we will make various definitions and notation for these definitions.
+
+\begin{definition}
+If $a$ and $b$ are two points and $a < b$, the statement that the point $p$ is \textbf{between} the points $a$ and $b$ means that $a < p$ and $p < b$.
+\end{definition}
+
+\begin{definition}
+A \textbf{point set} is a set of one or more points.
+\end{definition}
+
+\begin{definition}
+The statement that the point set $S$ is a \textbf{segment} means that there are two points $a$ and $b$, called the \textit{endpoints} of $S$, such that $S$ is the set of all points between $a$ and $b$. 
+\end{definition}
+
+\begin{notation}
+If $a$ and $b$ are two points and $a < b$ then $(a, b)$ denotes the segment consisting of all points between $a$ and $b$.
+\end{notation}
+\begin{definition}
+If $M$ is a point set and $p$ is a point, the statement that $p$ is a \textbf{limit point} of the point set $M$ means that every segment that contains $p$ contains a point of $M$ different from $p$.
+\end{definition}
+
+\begin{definition}
+The statement that the point set $I$ is an \textbf{interval} means that there are two points $a$ and $b$, called the \textit{endpoints} of $I$, such that $I$ is the set containing $a$, $b$, and $(a, b)$. $I$ is denoted by $[a, b]$.
+\end{definition}
+\begin{notation}
+If $a$ and $b$ are two points and $a < b$ then $[a, b]$ denotes the interval with endpoints $a$ and $b$.
+\end{notation}
+
+\begin{definition}
+The statement that the point set $H$ is a \textbf{subset} of the point set $K$ means that if $p$ is a point of $H$, then $p$ is a point of $K$. 
+\end{definition}
+\begin{notation}
+If $H$ is a point set and $K$ is a point set then $H \subseteq K$ means that $H$ is a subset of $K$.
+\end{notation}
+
+\begin{definition}
+If each of $H$ and $K$ is a point set and there is a point that is in both of them, then the \textbf{intersection} of $H$ and $K$ is the set to which a point $p$ belongs if and only if $p$ is in both $H$ and $K$.
+\end{definition}
+\begin{notation}
+If each of $H$ and $K$ is a point set and there is a point that is in both of them, then $H \cap K$ denotes the intersection of $H$ and $K$.
+\end{notation}
+
+\begin{definition}
+If each of $H$ and $K$ is a point set, the \textbf{union} of $H$ and $K$ is the set to which the point $p$ belongs if and only if $p$ is in $H$ or $p$ is in $K$.
+\end{definition}
+\begin{notation}
+If each of $H$ and $K$ is a point set, then $H \cup K$ denotes the union of $H$ and $K$. Thus $H \cup K$ is the set of all points in $H$ together with the points in $K$.
+\end{notation}
+
+\end{document}
