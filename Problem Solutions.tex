@@ -67,6 +67,50 @@ Therefore, we have found a segment that does not fulfill the requirements of Def
 \begin{solution} %5
 (Greg)
 
+Choose any point $p$ from $S$.
+Construct a segment $(x, y)$ that contains $p$ (ie: $x < p < y$).
+Put no other condition on $y$.
+According to Axiom 1, one of these three cases is true:
+
+\begin{enumerate}
+\item 
+$x > a$
+
+Choose a point $q$ between $x$ and $p$ ($x < q < p$; this exists by Axiom 3).
+Apply Axiom 2 three times:
+\begin{itemize}
+\item $a < x$ and $x < q$, so $a < q$
+\item $q < p$ and $p < b$, so $q < b$
+\item $q < p$ and $p < y$, so $q < y$
+\end{itemize}
+
+so $a < q < b$ and $x < q < y$.
+Therefore, $q$ is an element of $S$ inside $(a, b)$ that is different from $p$.
+
+\item
+$x = a$
+
+Repeat the proof for $x > a$ with one change:
+
+\begin{itemize}
+\item $a = x$ and $x < q$, so $a < q$
+\end{itemize}
+
+\item
+$x < a$
+
+Choose $q$ betweem $a$ and $p$.
+Change:
+
+\begin{itemize}
+\item $x < a$ and $a < q$, so $x < q$
+\end{itemize}
+
+(same conclusion as $x > a$)
+\end{enumerate}
+
+In each of these three cases, every $(x,y)$ contains a point $q$ from $(a, b)$.
+Therefore, we have satisfied Definition 4, so $p$ is a limit point of $(a, b)$.
 
 \end{solution}
 
