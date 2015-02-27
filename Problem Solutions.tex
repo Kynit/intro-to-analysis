@@ -1,5 +1,8 @@
 \documentclass{article}
-%\setlength\parindent{0pt}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+
 \newtheorem{solution}{Solution}
 
 \begin{document}
@@ -65,6 +68,35 @@ Let $a = 0$ and $b = 1$. Then, according to Problem 4, $b$ is a limit point of $
 
 \begin{solution} %4
 (Erin)
+
+We will prove that $b$ is a limit point of $(a, b)$; The proof for $a$ is similar.
+
+Construct a segment $(p, q)$ containing $b$ ($p < b < q$).
+According to Axiom 1, there are three cases, and we will deal with two of them simultaneously:
+
+\begin{enumerate}
+\item $p < a$
+
+In this case, $p < a < b < q$, so $p < (a, b) < q$.
+Since $(p, q)$ contains every point of $(a, b)$, we have found points that satisfy Defintion 4.
+
+\item $p \geq a$
+
+In this case, $a \leq p < b < q$.
+According to Axiom 3, there is a point $d$ between $p$ and $b$. 
+The inequality is then $a \leq p < d < b < q$.
+Then,
+
+\begin{itemize}
+\item $a < d < b$, so $d$ is in $(a, b)$.
+\item $p < d < q$, so $d$ is in $(p, q)$.
+\end{itemize}
+
+This means that $(p, q)$ contains $d$, which is a point of $(a, b)$.
+\end{enumerate}
+
+Therefore, every $(p, q)$ containing $b$ also contains a point of $(a, b)$, so $b$ is a limit point of $(a, b)$.
+
 \end{solution}
 
 \begin{solution} %5
