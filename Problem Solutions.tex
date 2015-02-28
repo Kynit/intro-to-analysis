@@ -160,6 +160,33 @@ Therefore, we have satisfied Definition 4, so $p$ is a limit point of $(a, b)$.
 \begin{solution} %8
 (Greg)
 
+Consider a point $p$.
+According to Axiom 4, there exists a largest integer $M_x$ and a smallest integer $M_y$ such that $M_x < p < M_y$.
+Then, choose points $x$ and $y$ from Axiom 3 such that $M_x < x < p$ and $p < y < M_y$, and consider the segment $S = (x, y)$.
+
+We will try to find an integer different from $p$ inside $S$.
+Axiom 1 gives us three cases:
+
+\begin{enumerate}
+\item $n = p$ (note: this is only possible if $p$ is an integer)
+
+Here, $n$ is not different from $p$, so we have not found an integer different from $p$.
+
+\item $n < p$
+
+Note that $n$ must satisfy $n \leq M_x$; if $n > M_x$, we have contradicted Axiom 4.
+Then, from Axiom 2, $n \leq M_x$ and $M_x < x$, so $n < x$.
+This shows that $n$ is not between $x$ and $y$, so $S$ does not contain $n$.
+
+\item $n > p$
+
+This case is symmetric to the $n < p$ case.
+
+\end{enumerate}
+
+Therefore, $S$ is a segment containing $p$ that does not contain any integers different from $p$.
+Since every element of $M$ is an integer, we have proven that there exists a segment $S$ for every point $p$ without any other points of $M$, so $M$ has no limit points.
+
 \end{solution}
 
 \begin{solution} %9
