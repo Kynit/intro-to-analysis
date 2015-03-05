@@ -1,6 +1,7 @@
 \documentclass{article}
 
 \usepackage{amsthm}
+\usepackage{amssymb}
 \theoremstyle{definition}
 
 \newtheorem{solution}{Solution}
@@ -149,6 +150,21 @@ Therefore, we have satisfied Definition 4, so $p$ is a limit point of $(a, b)$.
 \end{solution}
 
 \begin{solution} %6
+(Greg)
+
+There are two cases: if $p$ is not a point of $[a, b]$, then either $p < a$ or $p > b$.
+We will only consider the first case; the proof for the second follows identically.
+
+Construct two points $x$ and $y$ such that $x < p$ and $p < y < a$ (Axiom 3 guarantees that $y$ exists) and consider the segment $(x, y)$.
+Since $x < p < y$, $(x, y)$ contains $p$.
+
+Then, take any point $i$ from $[a, b]$.
+This requires that $a \leq i$.
+From Axiom 2, since $y < a$ and $a \leq i$, $y < i$.
+Then, since $i \nless y$, $(x, y)$ does not contain $i$.
+
+Therefore, $(x, y)$ is a segment containing $p$ but no points of $[a, b]$.
+This segment contradicts the definition of a limit point, so $p < a$ is not a limit point of $[a, b]$.
 \end{solution}
 
 \begin{solution} %7
