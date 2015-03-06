@@ -226,6 +226,52 @@ Therefore, every $S$ containing $0$ also contains a point of $M$, so $0$ is a li
 \end{solution}
 
 \begin{solution} %12
+(Erin)
+
+We will attack this problem in several cases:
+
+\begin{enumerate}
+\item $p < 0$
+
+Construct a segment $(a, b)$ that contains both $p$ and 0. 
+These points satisfy $a < p < 0 < b$.
+From Axiom 3, we can find another point $q$ such that $p < q < 0$.
+Then, the segment $(a, q)$ contains $p$, but no points of $M$ (since every point of $M$ is positive), so $p$ must not be a limit point of $M$.
+
+\item $p = 1$
+
+Construct an $(a, b)$ containing $p$ and $\frac{1}{2}$.
+The inequality is then $a < \frac{1}{2} < p < b$. 
+Axiom 3: can find $q$ such that $\frac{1}{2} < q < p$
+Then, $(q, b)$ contains $p$ but no point of $M$ other than $p$ (since every other point of $M$ is less than $\frac{1}{2}$, so $p$ must not be a limit point of $M$.
+
+\item $p > 1$
+
+Construct $(a, b)$ containing $p$ and $1$.
+($a < 1 < p < b$)
+Axiom 3: can find $q$ such that $1 < q < p$.
+Then, $(q, b)$ contains $p$ but no points of $M$.
+
+\item $0 < p < 1$
+
+First, note that if $n$ is an integer, then $n-1 < n < n+1$ (Axiom 5).
+Then, $\frac{1}{n+1} < \frac{1}{n} < \frac{1}{n-1}$.
+According to Axiom 3, we can find $\frac{1}{a}, \frac{1}{b}$ such that $\frac{1}{n+1} < \frac{1}{a} < \frac{1}{n} < \frac{1}{b} < \frac{1}{n-1}$.
+We have two cases from here:
+
+\begin{itemize}
+\item $p = \frac{1}{n}$
+
+$(\frac{1}{a}, \frac{1}{b})$ contains $p$ but no other point of $M$, so $p$ is not a limit point of $M$.
+
+\item $\frac{1}{n+1} < p < \frac{1}{n}$
+
+From Axiom 3, we can find $\frac{1}{c}$ such that $p < \frac{1}{c} < \frac{1}{n}$.
+Then, $(\frac{1}{a}, \frac{1}{c})$ contains $p$ but no other point of $M$, so $p$ is not a limit point of $M$.
+\end{itemize}
+\end{enumerate}
+
+These cases cover every point $p \neq 0$. Therefore, if $p$ is not zero, $p$ is not a limit point of $M$.
 \end{solution}
 
 \begin{solution} %13
