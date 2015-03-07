@@ -1,5 +1,10 @@
 \documentclass{article}
 %\setlength\parindent{0pt}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\theoremstyle{definition}
 \newtheorem{axiom}{Axiom}
 \newtheorem{definition}{Definition}
 \newtheorem{notation}{Notation}
@@ -84,5 +89,35 @@ If each of $H$ and $K$ is a point set, the \textbf{union} of $H$ and $K$ is the 
 \begin{notation}
 If each of $H$ and $K$ is a point set, then $H \cup K$ denotes the union of $H$ and $K$. Thus $H \cup K$ is the set of all points in $H$ together with the points in $K$.
 \end{notation}
+
+\begin{notation}
+If each of $a$, $b$, and $c$ is a number, we will use the notation $M = \{a, b, c\}$ to mean the set containing the points $a$, $b$, and $c$ and no other point. Similarly, we will denote infinite sets, when the pattern is clear, by $M = \{a_1, a_2, a_3, \dots\}$. For example, the set of all positive integers is denoted by $M = \{1, 2, 3, \dots\}$.
+\end{notation}
+
+\begin{definition}
+The statement that the point set $M$ is \textbf{infinite} means that for every positive integer $n$, $M$ contains at least $n$ points.
+\end{definition}
+
+\begin{definition}
+The statement that the point set $M$ is \textbf{finite} means that it is not infinite. That is, there is a positive integer $n$ such that $M$ does not contains $n$ points.
+\end{definition}
+
+By a \textbf{function} we mean a set of ordered number pairs, no two of which have the same first term. Or, if you prefer, a function is a set of points in the number plane with no two on the same vertical line. If $f$ is a function, then the \textbf{domain} of $f$ is the set of all first terms of ordered pairs of $f$ and the \textbf{range} of $f$ is the set of all second terms of ordered pairs of $f$. By a \textbf{sequence} we mean a function whose domain is the set of positive integers and whose range is a point set.
+
+Usually if $f$ is a function and $(x, y)$ is one of the ordered pairs in $f$, then we denote $y$ by $f(x)$. When $f$ is a sequence and $(n, y)$ is one of the ordered pairs in $f$, then we usually denote $y$ by the short hand $f_n$. Thus we might refer to a sequence by the name of the function as $f$ for example. Or we might refer to a sequence as $f_1, f_2, f_3, \dots$. By a term of a sequence $f$, or a point of (or in) the sequence, we mean $f_n$ for some positive integer $n$.
+
+\begin{definition}
+The statement that the sequence $x_1, x_2, x_3, \dots$ \textbf{converges} to the number $c$ or has $c$ as a \textbf{limit} means that for every segment $S$ containing $c$, there is a positive integer $n$ such that each of $x_n, x_{n+1}, x_{n+2}, \dots$ is in $S$.
+\end{definition}
+
+Note that a sequence is not a point set, but a set of ordered pairs. As such, it does not have a limit point. However, the range of a sequence is a point set and thus might or might not have a limit point.
+
+\begin{definition}
+The statement that the point set $M$ is \textbf{bounded above} means that there is a number $c$ such that each point of $M$ is to the left of $c$.
+\end{definition}
+
+\begin{definition}
+The statement that the point set $M$ is \textbf{bounded below} means that there is a number $c$ such that each point of $M$ is to the right of $c$.
+\end{definition}
 
 \end{document}
