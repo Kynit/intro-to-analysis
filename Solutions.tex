@@ -368,6 +368,32 @@ This is problem 17 (which has been proved), so we are finished.
 \end{solution}
 
 \begin{solution} %20
+(Fernando)
+
+Since $M$ is finite, there is a positive integer $n$ such that $M$ does not have $n$ points.
+We will then say that the number of points in $M$ is not greater than $n-1$.
+
+If $M$ has only one point, then we can say that its one point is the largest point in $M$.
+This is our base case.
+
+Then, if $M$ has more than one point, we can use the following algorithm to find the largest point:
+
+\begin{itemize}
+\item
+Choose two different points $a_1$ and $a_2$ from $M$.
+Then, either $a_1 > a_2$ or $a_1 < a_2$.
+Pick the larger of these two points and keep track of it.
+(We will assume that $a_1$ was the larger of the two.)
+
+\item
+Choose another point $a_3$ from $M$ that is different from $a_1$ and $a_2$.
+Then, either $a_3 > a_1$ or $a_3 < a_1$.
+If $a_3 > a_1$, from Axiom 2, $a_3 > a_2$, so $a_3$ is the new largest point.
+If $a_3 < a_1$, then $a_1$ remains the largest.
+\end{itemize}
+
+Since $M$ can have no more than $n-1$ points, we can then find the largest point using $n-2$ of these steps.
+Therefore, there must be a largest point of $M$. 
 \end{solution}
 
 \begin{solution} %21
@@ -395,6 +421,14 @@ Therefore, for every positive integer $n$, either $x_{n+1}$ or $x_{n+2}$ is not 
 \end{solution}
 
 \begin{solution} %25
+(Erin)
+
+First, note that `not infinite' means the same thing as `finite'.
+
+Since the sequence is convergent, there is a positive integer $n$ such that $x_n, x_{n+1}, x_{n+2}, \dots$ are all in $(a, b)$.
+This does not imply anything about the points $x_1, x_2, x_3, \dots, x_{n-1}$, so these points may or may not be in $(a, b)$.
+Counting these points tells us that there cannot be more than $n-1$ points of the sequence outside of $(a, b)$.
+Therefore, there are not $n$ points of the sequence not in $(a, b)$, so this set of points is finite. 
 \end{solution}
 
 \begin{solution} %26
@@ -435,6 +469,17 @@ Therefore, we cannot find an $n$ that satisfies Definition 11 for $S_d$, and the
 \end{solution}
 
 \begin{solution} %33
+(Greg)
+
+We will assume that $M$ has both a rightmost point and a smallest number largest points, and we will find a contradiction.
+
+If the largest point of $M$ is labelled $x$, then for any point $p$ in $M$, $p \leq x$.
+Also, if the smallest point greater than every point in $M$ is $y$, then for every $p$ in $M$, $p < y$.
+Note that since $x$ is in $M$, $x < y$.
+
+According to Axiom 3, there exists a point $z$ such that $x < z < y$.
+Since $x < z$, Axiom 2 tells us that every point of $M$ is less than $z$.
+However, $z$ is smaller than $y$, so $y$ is not the smallest point greater than every point of $M$, and we have a contradiction.
 \end{solution}
 
 \begin{solution} %34
