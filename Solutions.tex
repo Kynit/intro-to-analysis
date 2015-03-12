@@ -469,6 +469,17 @@ Therefore, we cannot find an $n$ that satisfies Definition 11 for $S_d$, and the
 \end{solution}
 
 \begin{solution} %33
+(Greg)
+
+We will assume that $M$ has both a rightmost point and a smallest number largest points, and we will find a contradiction.
+
+If the largest point of $M$ is labelled $x$, then for any point $p$ in $M$, $p \leq x$.
+Also, if the smallest point greater than every point in $M$ is $y$, then for every $p$ in $M$, $p < y$.
+Note that since $x$ is in $M$, $x < y$.
+
+According to Axiom 3, there exists a point $z$ such that $x < z < y$.
+Since $x < z$, Axiom 2 tells us that every point of $M$ is less than $z$.
+However, $z$ is smaller than $y$, so $y$ is not the smallest point greater than every point of $M$, and we have a contradiction.
 \end{solution}
 
 \begin{solution} %34
