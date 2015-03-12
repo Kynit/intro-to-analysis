@@ -368,6 +368,32 @@ This is problem 17 (which has been proved), so we are finished.
 \end{solution}
 
 \begin{solution} %20
+(Fernando)
+
+Since $M$ is finite, there is a positive integer $n$ such that $M$ does not have $n$ points.
+We will then say that the number of points in $M$ is not greater than $n-1$.
+
+If $M$ has only one point, then we can say that its one point is the largest point in $M$.
+This is our base case.
+
+Then, if $M$ has more than one point, we can use the following algorithm to find the largest point:
+
+\begin{itemize}
+\item
+Choose two different points $a_1$ and $a_2$ from $M$.
+Then, either $a_1 > a_2$ or $a_1 < a_2$.
+Pick the larger of these two points and keep track of it.
+(We will assume that $a_1$ was the larger of the two.)
+
+\item
+Choose another point $a_3$ from $M$ that is different from $a_1$ and $a_2$.
+Then, either $a_3 > a_1$ or $a_3 < a_1$.
+If $a_3 > a_1$, from Axiom 2, $a_3 > a_2$, so $a_3$ is the new largest point.
+If $a_3 < a_1$, then $a_1$ remains the largest.
+\end{itemize}
+
+Since $M$ can have no more than $n-1$ points, we can then find the largest point using $n-2$ of these steps.
+Therefore, there must be a largest point of $M$. 
 \end{solution}
 
 \begin{solution} %21
