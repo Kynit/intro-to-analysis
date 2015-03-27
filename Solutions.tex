@@ -446,6 +446,34 @@ Therefore, there are not $n$ points of the sequence not in $(a, b)$, so this set
 \end{solution}
 
 \begin{solution} %26
+(Rayne)
+
+Suppose that $n$ is an odd positive integer - the proof for even $n$ is similar.
+
+Since the sequence is defined as
+\begin{equation*}
+	x_n =
+	\begin{cases}
+		\frac{1}{n-1}, &n \text{ odd} \\
+		\frac{1}{n+1}, &n \text{ even} 
+	\end{cases}
+\end{equation*}
+we can write out several terms of the sequence as
+
+{
+\begin{center}
+\begin{tabular}{c|c|c|c}
+	odd & even & odd & even \\
+	$x_n$ & $x_{n+1}$ & $x_{n+2}$ & $x_{n+3}$ \\
+	\hline
+	$\frac{1}{n+1}$ & $\frac{1}{n}$ & $\frac{1}{n+3}$ & $\frac{1}{n+2}$
+\end{tabular}
+\end{center}
+}
+
+We can see from this sample that $x_{n+2} < x_{n+3} < x_{n} < x_{n+1}$.
+Then, if we make a segment $(a,b)$ containing $0$, $x_n$ will be in this segment for large enough $n$.
+Since all consecutive terms of the sequence starting at $n+2$ are between $0$ and $b$, then we can see that the definition of convergence is satisfied, and the sequence must converge to $0$.
 \end{solution}
 
 \begin{solution} %27
