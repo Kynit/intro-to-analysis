@@ -221,6 +221,13 @@ However, we know that $p$ is a limit point of $M$, so we have a contradiction, a
 \end{solution}
 
 \begin{solution} %10
+(Greg)
+
+If $S$ is a segment containing $p$, then $S$ contains a point of $K$ different from $p$.
+Since every point of $K$ is a limit point of $H$, $S$ contains a limit point of $H$ different from $p$.
+According to Problem 9, if $S$ contains a limit point of $H$, $S$ also contains 2 different points of $H$.
+If $p$ is equal to one of these points, it will be different from the other one.
+Therefore, $S$ contains a point of $H$ different from $p$, satisfying Definition 4, and $p$ is a limit point of $H$.
 \end{solution}
 
 \begin{solution} %11
@@ -365,6 +372,13 @@ This is problem 17 (which has been proved), so we are finished.
 \end{solution}
 
 \begin{solution} %19
+(Erin)
+
+Consider a subset of $M$ that contains $n$ points.
+Since this subset has a finite number of points, we can order them $x_0, x_1, x_2, \dots, x_n$ such that $x_0 < x_1 < x_2 < \dots < x_n$.
+
+However, since there is no largest number in $M$, we can find another point $x_{n+1}$ from $M$ such that $x_n < x_{n+1}$.
+We can repeat this process indefinitely, so for any positive integer $n$, we can find at least $n$ points in $M$, making $M$ an infinite set.  
 \end{solution}
 
 \begin{solution} %20
@@ -432,6 +446,34 @@ Therefore, there are not $n$ points of the sequence not in $(a, b)$, so this set
 \end{solution}
 
 \begin{solution} %26
+(Rayne)
+
+Suppose that $n$ is an odd positive integer - the proof for even $n$ is similar.
+
+Since the sequence is defined as
+\begin{equation*}
+	x_n =
+	\begin{cases}
+		\frac{1}{n-1}, &n \text{ odd} \\
+		\frac{1}{n+1}, &n \text{ even} 
+	\end{cases}
+\end{equation*}
+we can write out several terms of the sequence as
+
+{
+\begin{center}
+\begin{tabular}{c|c|c|c}
+	odd & even & odd & even \\
+	$x_n$ & $x_{n+1}$ & $x_{n+2}$ & $x_{n+3}$ \\
+	\hline
+	$\frac{1}{n+1}$ & $\frac{1}{n}$ & $\frac{1}{n+3}$ & $\frac{1}{n+2}$
+\end{tabular}
+\end{center}
+}
+
+We can see from this sample that $x_{n+2} < x_{n+3} < x_{n} < x_{n+1}$.
+Then, if we make a segment $(a,b)$ containing $0$, $x_n$ will be in this segment for large enough $n$.
+Since all consecutive terms of the sequence starting at $n+2$ are between $0$ and $b$, then we can see that the definition of convergence is satisfied, and the sequence must converge to $0$.
 \end{solution}
 
 \begin{solution} %27
