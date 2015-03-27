@@ -169,8 +169,11 @@ This segment contradicts the definition of a limit point, so $p < a$ is not a li
 \end{solution}
 
 \begin{solution} %7
-(Amber)
+(Erin)
 
+If $p$ is a limit point of $H$, then any segment $S$ which contains $p$ also contains a different point of $H$.
+Since $H \subseteq K$, this point is also a point of $K$.
+Therefore, $S$ also contains a different point of $K$, and $p$ is a limit point of $K$.
 \end{solution}
 
 \begin{solution} %8
@@ -318,6 +321,15 @@ This shows that not every interval containing a limit point must contain a diffe
 \end{solution}
 
 \begin{solution} %15
+(Greg)
+
+Consider an arbitrary segment $S = (S_a, S_b)$ that contains $p$ (so $S_a < p < S_b$).
+From Axiom 3, we can find two more points $I_a, I_b$ such that $S_a < I_a < p$ and $p < I_b < S_b$.
+
+Then, we can construct the interval $I = [I_a, I_b]$.
+Note that every point of $I$ is also in $S$ - ie, $I \subseteq S$.
+Since $I$ contains $p$, it must contain a point of $M$ different from $p$.
+Therefore, $S$ also contains a point of $M$ different from $p$, and $p$ is a limit point of $M$.
 \end{solution}
 
 \begin{solution} %16
@@ -411,6 +423,19 @@ Therefore, there must be a largest point of $M$.
 \end{solution}
 
 \begin{solution} %21
+(Erin)
+
+According to Problem 9, $S$ must contain at least two points of $M$ different from $p$.
+Label these two points $q$ and $s$.
+Assume that $q$ is less than $p$ - a similar argument applies if $q > p$.
+
+If $S$ is the segment $(a, b)$ with $a < p < b$, then we can see that $a < q < p$.
+Then, we define a new segment $(c, d)$ where $q < c < p$ and $p < d < b$.
+This new segment does not contain $q$.
+However, it still contains $p$, so there must be another point of $M$ different from $p$ inside $(c, d)$.
+
+Since every point of $(c, d)$ is also in $(a, b)$, the new point that we have found is also in $(a, b)$.
+We can repeat this process indefinitely, so $S$ must contain infinitely many points of $M$.
 \end{solution}
 
 \begin{solution} %22
