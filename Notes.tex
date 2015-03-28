@@ -11,7 +11,7 @@
 
 \begin{document}
 \section*{Main Course Notes}
-There are 5 axioms that we will use in this class:
+There are 6 axioms that we will use in this class:
 
 \begin{axiom}
 If each of $a$ and $b$ is a number, then exactly one of the following is true:
@@ -40,6 +40,17 @@ If $a$ is a point, then there is a smallest integer $b$ such that $b > a$ and a 
 \begin{axiom}
 If $n$ is an integer, then $n + 1$ and $n - 1$ are integers, and $n$ is the only integer between $n - 1$ and $n + 1$.
 \end{axiom}
+
+\begin{axiom}
+If $M$ is a point set which is bounded above (below) then there is a point $p$ such that either
+\begin{enumerate}
+\item $p \in M$ and $p$ is the largest (smallest) number in $M$, or
+
+\item $p \notin M$ and $p$ is the smallest (largest) number such that each point of $M$ is to the left (right) of $p$.
+\end{enumerate}
+
+\end{axiom}
+
 
 Then, as the course continues, we will make various definitions and notation for these definitions.
 
@@ -119,5 +130,45 @@ The statement that the point set $M$ is \textbf{bounded above} means that there 
 \begin{definition}
 The statement that the point set $M$ is \textbf{bounded below} means that there is a number $c$ such that each point of $M$ is to the right of $c$.
 \end{definition}
+
+(Notation)
+If $p$ is a point and $M$ is a point set, then $p \in M$ means that $p$ is a point in $M$. Similarly, $p \notin M$ means that $p$ is not in $M$.
+
+\begin{definition}
+The statement that the sequence $x_1, x_2, x_3, \dots$ is an \textbf{increasing} (\textbf{decreasing}) sequence means that for each positive integer $n$, $x_n < x_{n+1}$ ($x_n < x_{n+1}$).
+\end{definition}
+
+\begin{definition}
+The statement that the sequence $x_1, x_2, x_3, \dots$ is \textbf{non decreasing} (\textbf{non increasing}) means that for each positive integer $n$, $x_n \leq x_{n+1}$ ($x_n \geq x_{n+1}$).
+\end{definition}
+
+\begin{definition}
+The statement that the point set $M$ is \textbf{bounded} means that $M$ is bounded above and $M$ is bounded below. Equivalently, there is a segment that contains $M$.
+\end{definition}
+
+\begin{definition}
+If $M$ is a point set that is bounded above, then the \textbf{least upper bound} of $M$ is the number that is the largest number in $M$ or the smallest number that is larger than each number in $M$. It is denoted by lub($M$).
+\end{definition}
+
+\begin{definition}
+If $M$ is a point set that is bounded below, then the \textbf{greatest lower bound} of $M$ is the number that is the smallest number in $M$ or the largest number that is smaller than each number in $M$. It is denoted by glb($M$).
+\end{definition}
+
+From here on, we will be talking about points in a plane. We will denote them by their coordinates as $(x, y)$. You will have to determine from the context whether $(x, y)$ denotes a segment from $x$ to $y$ or the point with coordinates $x$ and $y$. We will also have to be careful to distinguish between points and points on the x-axis, which are really points of the form $(x, 0)$ but which we often think of as numbers.
+
+\begin{definition}
+The statement that $f$ is a \textbf{simple graph} (or a \textbf{function}) means that $f$ is a set of points in a plane such that no vertical line contains two of them.
+\end{definition}
+
+The following two definitions are equivalent:
+
+\begin{definition}
+The statement that the simple graph $f$ is \textbf{continuous} at the point $(x, f(x))$ means that if $S$ is a segment containing $f(x)$ then there is a segment $T$ containing $x$ such that if $t \in T$ and $t$ is in the domain of $f$, then $f(t) \in S$.
+\end{definition}
+
+\begin{definition}
+The statement that the simple graph $f$ is \textbf{continuous} at the point $(x, f(x))$ means that if $A$ and $B$ are any two horizontal lines with the point $(x, f(x))$ between them, then there are two vertical lines $a$ and $b$ with the point $(x, f(x))$ between them such that every point of the graph $f$ that is between $a$ and $b$ is also between $A$ and $B$.
+\end{definition}
+
 
 \end{document}
