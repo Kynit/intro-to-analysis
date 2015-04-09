@@ -567,6 +567,25 @@ We have a contradiction, so $p$ must be a limit point of $M$.
 \end{solution}
 
 \begin{solution} %35
+(Erin)
+
+Let $M$ be the range of the sequence $\{ x_1, x_2, x_3, \dots\}$.
+Since $M$ is bounded above, one of two things must be true:
+\begin{enumerate}
+\item There is a largest point $p$ in $M$
+
+Suppose that $p = x_n$. 
+Then, since the sequence is increasing, $x_{n+1} > p$, so $p$ must not be the largest point of $M$.
+Therefore, there is no largest point of $M$.
+
+\item There is a smallest point $p$ that is greater than every point in $M$.
+
+Then, create a segment $(a, b)$ containing $p$. 
+There must be a point of $M$ between $a$ and $p$: if there was not, then $p$ would not be the smallest point greater than every point of $M$.
+
+Therefore, for some $n$, $a < x_n < p$.
+Since $x_n < x_{n+1} < p$, all of $x_n, x_{n+1}, x_{n+2}, \dots$ are in $(a, b)$, so the sequence converges to $p$.
+\end{enumerate}
 \end{solution}
 
 \begin{solution} %36
