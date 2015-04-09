@@ -551,6 +551,19 @@ However, $z$ is smaller than $y$, so $y$ is not the smallest point greater than 
 \end{solution}
 
 \begin{solution} %34
+(Greg)
+
+We will try to find a segment that contains $p$ but no other point of $M$.
+Construct a segment $S = (a,b)$ that contains $p$.
+This means that $a < p$.
+
+If $S$ does not contain another point of $M$, then every point $q$ of $M$ must satisfy $q \leq a$ or $q \geq b$.
+No points of $M$ are greater than $b$, since they are all less than $p$.
+
+Now, Axiom 3 says that there is a point between $a$ and $p$.
+This point is greater than every point of $M$, but is smaller than $p$. 
+However, $p$ was the smallest point with this property.
+We have a contradiction, so $p$ must be a limit point of $M$.
 \end{solution}
 
 \end{document}
